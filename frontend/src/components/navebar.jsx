@@ -87,7 +87,7 @@ const Navbar = () => {
         }`}
       >
         <div className="flex justify-between items-center p-4 border-b">
-          <h2 className="text-xl font-bold text-purple-500">Menu</h2>
+          <h2 className="text-xl font-bold text-[#FD1F4A]">Menu</h2>
           <button onClick={() => setMenuOpen(false)} aria-label="Close Menu">
             <X size={24} />
           </button>
