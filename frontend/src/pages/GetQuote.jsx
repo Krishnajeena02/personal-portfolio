@@ -107,7 +107,7 @@ function QuotePage() {
         phone: Number(formData.phone),
         ProductBudget: Number(formData.ProductBudget),
       });
-      const response = await fetch(import.meta.env.VITE_BACKEND_URL, {
+      const response = await fetch(`${import.meta.env.VITE_BACKEND_URL}/api/quote`, {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
