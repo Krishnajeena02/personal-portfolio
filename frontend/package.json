@@ -16,6 +16,7 @@
     "@react-three/fiber": "^9.1.2",
     "@tailwindcss/vite": "^4.1.10",
     "bootstrap": "^5.3.6",
+    "dotenv": "^17.2.3",
     "emailjs-com": "^3.2.0",
     "framer-motion": "^12.19.1",
     "lucide-react": "^0.515.0",

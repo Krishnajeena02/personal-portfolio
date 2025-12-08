@@ -1,5 +1,8 @@
 import React, { useState } from 'react';
 import { motion } from 'framer-motion';
+import dotenv from "dotenv";
+
+dotenv.config();
 
 // Animation variants
 const containerVariants = {
@@ -105,7 +108,7 @@ function QuotePage() {
         phone: Number(formData.phone),
         ProductBudget: Number(formData.ProductBudget),
       });
-      const response = await fetch('http://localhost:3000/quote', {
+      const response = await fetch(process.env.BACKEND_URL, {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
