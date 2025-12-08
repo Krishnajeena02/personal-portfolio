@@ -32,7 +32,7 @@ mongoose.connect(process.env.MONGODB_URL, {
     .catch((err) => console.error("MongoDB connection error:", err));
 
 // Mount router
-app.use("/api", quoteRouter); // http://localhost:3000/quote
+app.use("/", quoteRouter); // http://localhost:3000/quote
 
 // Error handling middleware
 app.use((err, req, res, next) => {
