@@ -15,28 +15,28 @@ const Navbar = () => {
     { path: '/service', label: 'Service' },
   ];
 
-  const dockItems = [
-    {
-      icon: <VscHome size={20} />,
-      label: 'Home',
-      onClick: () => window.location.href = '/',
-    },
-    {
-      icon: <VscArchive size={20} />,
-      label: 'Portfolio',
-      onClick: () => window.location.href = '/portfolio',
-    },
-    {
-      icon: <VscAccount size={20} />,
-      label: 'Contact',
-      onClick: () => window.location.href = '/contact',
-    },
-    {
-      icon: <VscSettingsGear size={20} />,
-      label: 'Service',
-      onClick: () => window.location.href = '/service',
-    },
-  ];
+  // const dockItems = [
+  //   {
+  //     icon: <VscHome size={20} />,
+  //     label: 'Home',
+  //     onClick: () => window.location.href = '/',
+  //   },
+  //   {
+  //     icon: <VscArchive size={20} />,
+  //     label: 'Portfolio',
+  //     onClick: () => window.location.href = '/portfolio',
+  //   },
+  //   {
+  //     icon: <VscAccount size={20} />,
+  //     label: 'Contact',
+  //     onClick: () => window.location.href = '/contact',
+  //   },
+  //   {
+  //     icon: <VscSettingsGear size={20} />,
+  //     label: 'Service',
+  //     onClick: () => window.location.href = '/service',
+  //   },
+  // ];
 
   return (
     <>
