@@ -15,7 +15,7 @@ const projectData = [
     description: "A full-stack replica of Zerodha that allows users to register, track portfolios, and simulate buying/selling stocks with real-time market data. Built with MERN stack, featuring a responsive design and interactive charts for seamless trading experience.",
     image:zerodha,
     github:"https://github.com/Krishnajeena02/zerodha-clone",
-    demo: "/",
+    demo: "https://zerodha-clone-six-delta.vercel.app/",
     features: ["React", "Bootstrap", "Framer Motion"],
   },
   {
