@@ -79,7 +79,7 @@ const ProjectCard = ({ title, description, image, github, demo, features }) => (
     <div className="w-full h-40 mb-4 overflow-hidden rounded-lg transition-all duration-500 hover:scale-110 hover:shadow-2xl hover:-translate-y-1">
       <img src={image} alt={title} className="w-full h-full object-cover  " />
     </div>
-    <h2 className="text-2xl font-bold text-center mb-2 text-[#FF4F72]">{title}</h2>
+    <h2 className="text-2xl font-bold text-center mb-2 text-[#90a1b9]">{title}</h2>
     <p className="text-sm text-center text-gray-700 dark:text-gray-300 mb-3 px-1">{description}</p>
     <ul className="text-sm font-semibold flex gap-2 flex-wrap text-gray-800 dark:text-gray-200  ml-3 space-y-1 mb-4">
       {features.map((feature, i) => (
