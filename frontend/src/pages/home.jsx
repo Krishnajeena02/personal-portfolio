@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 import TiltedCard from '../TiltedCard';
 import photo from '../assets/photo-1.jpg';
 import Aurora from '../components/Arora'; // Ensure you have the Aurora component
-
+import Particles from '../particles';
 const container = {
   hidden: {},
   visible: {
@@ -22,12 +22,25 @@ function Home() {
     <div className="relative overflow-hidden">
       {/* Aurora animated background */}
       <Aurora
-        colorStops={["#7BE495", "#FF94B4", "#FF3232"]}
-        blend={0.3}
-        amplitude={1.6}
+        colorStops={["pink", "blue", "purple"]}
+        blend={0.2}
+        amplitude={1.5}
         speed={0.6}
       />
-
+    {/* Particle background */}
+         <div className="absolute inset-1  z-0">
+           <Particles
+             particleColors={['#d8b4fe', '#c084fc']} // light purple bubbles
+             particleCount={400}
+             particleSpread={8}
+             speed={0.1}
+             particleBaseSize={100}
+             moveParticlesOnHover={true}
+             alphaParticles={false}
+             disableRotation={false}
+           />
+         </div>
+   
       <motion.div
         initial="hidden"
         animate="visible"
@@ -36,7 +49,7 @@ function Home() {
       >
         {/* Left Text Section */}
         <motion.div className="md:w-1/2 space-y-6 text-center md:text-left" variants={container}>
-          <motion.h1 className="text-4xl bg-clip-text text-transparent bg-gradient-to-r from-pink-500 via-blue-600 to-purpule-500 md:text-6xl font-bold leading-tight" variants={item}>
+          <motion.h1 className="text-4xl  bg-clip-text text-transparent  bg-gradient-to-r from-pink-500 via-blue-600 to-purpule-500 md:text-6xl font-bold leading-tight" variants={item}>
            
               
            
@@ -45,7 +58,7 @@ function Home() {
           </motion.h1>
 
           <motion.h2
-            className="text-lg md:text-2xl font-medium text-gray-600 leading-relaxed"
+            className="text-lg  md:text-2xl font-medium text-gray-600 leading-relaxed"
             variants={item}
           >
             Transform your business with cutting-edge web development solutions. From concept to
