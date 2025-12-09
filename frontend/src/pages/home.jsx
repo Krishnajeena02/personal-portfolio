@@ -36,7 +36,7 @@ function Home() {
       >
         {/* Left Text Section */}
         <motion.div className="md:w-1/2 space-y-6 text-center md:text-left" variants={container}>
-          <motion.h1 className="text-4xl md:text-6xl font-bold leading-tight" variants={item}>
+          <motion.h1 className="text-4xl bg-clip-text text-transparent bg-gradient-to-r from-pink-500 via-blue-600 to-purpule-500 md:text-6xl font-bold leading-tight" variants={item}>
            
               
            
