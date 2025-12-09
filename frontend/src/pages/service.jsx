@@ -36,7 +36,7 @@ const ServiceCard = ({ image, title, description, features }) => (
       <img src={image} alt={title} className="w-full h-full object-cover" />
     </div>
     <h2 className="text-2xl font-bold text-center mb-2 text-[#FF4F72]">{title}</h2>
-    <p className="text-sm text-center text-[#ff2056] dark:text-gray-300 mb-3 px-1">{description}</p>
+    <p className="text-sm text-center text-[gray-700] dark:text-gray-300 mb-3 px-1">{description}</p>
     <ul className="text-sm font-semibold text-gray-800 dark:text-gray-200 list-disc ml-6 space-y-1">
       {features.map((feature, i) => (
         <li key={i}>{feature}</li>
@@ -97,7 +97,7 @@ function ServicePage() {
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ delay: 0.2, duration: 0.6 }}
-          className="text-2xl font-semibold text-gray-900 dark:text-gray-800 text-center mb-10"
+          className="text-2xl font-semibold text-[#ff2056] dark:text-gray-800 text-center mb-10"
         >
           Comprehensive web development solutions for modern businesses
         </motion.h4>
