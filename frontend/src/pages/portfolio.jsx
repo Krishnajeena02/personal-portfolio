@@ -6,6 +6,7 @@ import { motion } from "framer-motion";
 import travelfly_img from "../assets/Screenshot Capture - 2025-12-07 - 09-07-25.png"
 import vibly from "../assets/vibely.png"
 import zerodha from '../assets/zerodha.png'
+import wanderlust from '../assets/capture.png'
 import Particles from '../particles';
 // Sample project data
 const projectData = [
@@ -36,8 +37,7 @@ const projectData = [
   {
     title: "Wanderlust",
     description: "Wanderlust is a dynamic travel discovery platform that lets users explore destinations, filter options, and plan trips effortlessly with an interactive and user-friendly interface.",
-    image:
-      "https://images.unsplash.com/photo-1517816743773-6e0fd518b4a6?q=80&w=2560&auto=format&fit=crop",
+    image:wanderlust,
     github: "https://github.com/Krishnajeena02/wanderlust_project",
     demo: " https://wanderlust-project-nexe.onrender.com/listings",
     features: ["React.js", "MongoDB","Mapbox Api","Bootstrap", "JWT Authentication"],
