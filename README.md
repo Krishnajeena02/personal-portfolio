@@ -1,6 +1,6 @@
-# 🧑‍💼 Portfolio for Agency
+# 🧑‍💼Personal Portfolio 
 
-A modern and animated full-stack **portfolio website** built with the **MERN stack**. Designed to showcase services, projects, and contact forms for a creative or tech agency.
+A modern and animated full-stack **portfolio website** built with the **MERN stack**. 
 
 ---
 
@@ -34,10 +34,4 @@ A modern and animated full-stack **portfolio website** built with the **MERN sta
 
 ---
 
-## 🚀 Getting Started
-
-### 1. Clone the repo
-
-```bash
-git clone https://github.com/VibhuGupta-dev/Portfolio-for-agency.git
-cd Portfolio-for-agency
+live demo-https://krishna-dev-three.vercel.app/
