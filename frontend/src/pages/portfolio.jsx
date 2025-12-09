@@ -6,7 +6,7 @@ import { motion } from "framer-motion";
 import travelfly_img from "../assets/Screenshot Capture - 2025-12-07 - 09-07-25.png"
 import vibly from "../assets/vibely.png"
 import zerodha from '../assets/zerodha.png'
-import wanderlust from '../assets/CAPTURE.PNG'
+import wanderlust from '../assets/wanderlust.png'
 import Particles from '../particles';
 // Sample project data
 const projectData = [
