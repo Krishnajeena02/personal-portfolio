@@ -73,8 +73,8 @@ function ServicePage() {
   return (
     <div>
       {/* Ballpit Background */}
-      <div className="absolute top-0 left-0 w-full h-full -z-10">
-        <Ballpit count={200} gravity={0.7} friction={0.8} wallBounce={0.95} followCursor={true} />
+      <div className="absolute top-0 left-0 hidden md:inline w-full h-full -z-10">
+        <Ballpit count={100} gravity={1.4} friction={0.8} wallBounce={0.95} followCursor={true} />
       </div>
 
       {/* Main Content */}
