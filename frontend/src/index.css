@@ -1,5 +1,13 @@
 @import "tailwindcss";
+/* @import url('https://fonts.googleapis.com/css2?family=Geom:ital,wght@0,300..900;1,300..900&display=swap');
+:root {
 
+    --font-family: "Geom", sans-serif;
+}
+
+html, body {
+  font-family: var(--font-family);
+} */
 /* :root {
     font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
     line-height: 1.5;

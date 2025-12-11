@@ -4,6 +4,7 @@ import image2 from '../assets/image-2.jpg';
 import image3 from '../assets/image-3.jpg';
 import { motion } from 'framer-motion';
 import Ballpit from '../ballpit';
+import Particles from '../particles.jsx'
 
 const containerVariants = {
   hidden: { opacity: 0 },
@@ -72,8 +73,21 @@ function ServicePage() {
 
   return (
     <div>
+       {/* Particle background */}
+            <div className="absolute inset-0 z-0 block md:hidden">
+              <Particles
+                particleColors={['#d8b4fe', '#c084fc']} // light purple bubbles
+                particleCount={300}
+                particleSpread={20}
+                speed={0.1}
+                particleBaseSize={300}
+                moveParticlesOnHover={true}
+                alphaParticles={false}
+                disableRotation={false}
+              />
+            </div>
       {/* Ballpit Background */}
-      <div className="absolute top-0 left-0 hidden md:inline w-full h-full -z-10">
+      <div className="absolute top-0 left-0 hidden md:block w-full h-full -z-10">
         <Ballpit count={100} gravity={1.4} friction={0.8} wallBounce={0.95} followCursor={true} />
       </div>
 
