@@ -3,8 +3,11 @@ import { motion } from 'framer-motion';
 import { Link } from 'react-router-dom';
 import TiltedCard from '../TiltedCard';
 import photo from '../assets/photo-1.jpg';
-import Aurora from '../components/Arora'; // Ensure you have the Aurora component
+import Aurora from '../components/Arora';
 import Particles from '../particles';
+import { FaGithub, FaLinkedin, FaInstagram, FaTwitter } from "react-icons/fa";
+import Typewriter from 'typewriter-effect';
+
 const container = {
   hidden: {},
   visible: {
@@ -27,44 +30,63 @@ function Home() {
         amplitude={1.5}
         speed={0.6}
       />
-    {/* Particle background */}
-         <div className="absolute inset-1  z-0">
-           <Particles
-             particleColors={['#d8b4fe', '#c084fc']} // light purple bubbles
-             particleCount={400}
-             particleSpread={8}
-             speed={0.1}
-             particleBaseSize={100}
-             moveParticlesOnHover={true}
-             alphaParticles={false}
-             disableRotation={false}
-           />
-         </div>
-   
+
+      {/* Particles */}
+      <div className="absolute inset-1 z-0">
+        <Particles
+          particleColors={['#d8b4fe', '#c084fc']}
+          particleCount={400}
+          particleSpread={8}
+          speed={0.1}
+          particleBaseSize={100}
+          moveParticlesOnHover={true}
+          alphaParticles={false}
+          disableRotation={false}
+        />
+      </div>
+
       <motion.div
         initial="hidden"
         animate="visible"
         variants={container}
         className="flex flex-col md:flex-row items-center justify-between px-6 md:px-16 py-20 gap-10 relative z-10"
       >
-        {/* Left Text Section */}
+        {/* Left Section */}
         <motion.div className="md:w-1/2 space-y-6 text-center md:text-left" variants={container}>
-          <motion.h1 className="text-4xl   bg-clip-text text-transparent  bg-gradient-to-r from-pink-500 via-blue-600 to-purpule-500 md:text-6xl font-bold leading-tight" variants={item}>
-           
-              
-           
-              I Build <br /> Digital Experiences <br /> That Matter
-           
-          </motion.h1>
 
-          <motion.h2
-            className="text-lg  md:text-2xl font-medium text-gray-600 leading-relaxed"
+          <motion.h1
+            className="text-4xl md:text-6xl font-bold leading-tight bg-clip-text text-transparent bg-gradient-to-r from-pink-500 via-blue-600 to-purple-500"
             variants={item}
           >
-            Transform your business with cutting-edge web development solutions. From concept to
-            launch, I create websites that drive results.
-          </motion.h2>
+            Hi, I'm Krishna  <br />
+            <span className="text-3xl md:text-5xl font-bold">
+              <Typewriter
+                options={{
+                  strings: [
+                    "Full Stack Developer",
+                    "MERN Developer",
+                    "Java Developer",
+                    "UI/UX Enthusiast",
+                    "DSA Learner"
+                  ],
+                  autoStart: true,
+                  loop: true,
+                }}
+              />
+            </span>
+          </motion.h1>
 
+          <motion.p
+            className="text-lg md:text-2xl font-medium text-gray-600 leading-relaxed"
+            variants={item}
+          >
+             I am a passionate Full Stack Developer who loves building fast, modern, and
+  visually appealing digital experiences. I specialize in the MERN stack, Java,
+  and UI/UX design — creating web applications that are functional, scalable,
+  and user-focused.
+          </motion.p>
+
+          {/* Buttons */}
           <motion.div
             className="flex flex-wrap justify-center md:justify-start gap-4 pt-4"
             variants={item}
@@ -73,25 +95,42 @@ function Home() {
               <motion.button
                 whileHover={{ scale: 1.05 }}
                 whileTap={{ scale: 0.95 }}
-                className="bg-[#FD1F4A] hover:bg-[#2E77AE]  text-white font-semibold px-6 py-3 rounded-lg transition"
+                className="bg-[#FD1F4A] hover:bg-[#2E77AE] text-white font-semibold px-6 py-3 rounded-lg transition"
               >
                 Start Project
               </motion.button>
             </Link>
 
-            <Link to="/portfolio">
+            {/* Resume Button */}
+            <a
+              href="/resume.pdf"    // <-- update later
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               <motion.button
                 whileHover={{ scale: 1.05 }}
                 whileTap={{ scale: 0.95 }}
                 className="bg-gray-200 text-black font-semibold px-6 py-3 rounded-lg shadow hover:bg-purple-100 hover:shadow-lg transition"
               >
-                View Work
+                Download Resume
               </motion.button>
-            </Link>
+            </a>
           </motion.div>
+
+          {/* Social Icons */}
+          <motion.div
+            className="flex justify-center md:justify-start gap-6 text-3xl pt-4"
+            variants={item}
+          >
+            <a href="https://github.com" target="_blank"><FaGithub className="hover:text-neutral-600 transition" /></a>
+            <a href="https://linkedin.com" target="_blank"><FaLinkedin className="hover:text-blue-500 transition" /></a>
+            <a href="https://instagram.com" target="_blank"><FaInstagram className="hover:text-pink-600 transition" /></a>
+            <a href="https://twitter.com" target="_blank"><FaTwitter className="hover:text-blue-400 transition" /></a>
+          </motion.div>
+
         </motion.div>
 
-        {/* Tilted Image Card */}
+        {/* Right Section - Tilted Image */}
         <motion.div className="md:w-1/2 flex justify-center" variants={item}>
           <TiltedCard
             imageSrc={photo}
@@ -105,17 +144,11 @@ function Home() {
             showMobileWarning={false}
             showTooltip={true}
             displayOverlayContent={true}
-            overlayContent={
-              <p className="tilted-card-demo-text text-white text-center">
-                
-              </p>
-            }
+            overlayContent={<p className="text-white text-center"></p>}
           />
         </motion.div>
-      </motion.div>
 
-      {/* PixelTrail Mouse Effect */}
-      
+      </motion.div>
     </div>
   );
 }

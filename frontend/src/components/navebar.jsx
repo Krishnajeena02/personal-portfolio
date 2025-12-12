@@ -43,7 +43,7 @@ const Navbar = () => {
       {/* Main Navbar */}
       <nav className="w-full fixed top-0 left-0 bg-white text-black shadow-md px-6 py-4 flex items-center z-50">
         {/* Logo */}
-        <div className="text-2xl font-bold text-black">
+        <div className="text-2xl  font-bold text-black">
           <Link to="/">Krishna.Dev</Link>
         </div>
 

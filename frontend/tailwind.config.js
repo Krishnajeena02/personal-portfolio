@@ -3,7 +3,14 @@ export const content = [
     "./src/**/*.{js,jsx,ts,tsx}",
     "./public/index.html"
 ];
+
 export const theme = {
-    extend: {},
-};
+    extend: {
+      
+       fontFamily: {
+        sekuya: ["Sekuya", "system-ui"], // only font names here
+      },
+    },
+  }
+  
 export const plugins = [];
