@@ -1,16 +1,16 @@
 /** @type {import('tailwindcss').Config} */
-export const content = [
+module.exports = {
+  content: [
     "./src/**/*.{js,jsx,ts,tsx}",
     "./public/index.html"
-];
-
-export const theme = {
+  ],
+  darkMode: 'class', // ← correct place
+  theme: {
     extend: {
-      
-       fontFamily: {
-        sekuya: ["Sekuya", "system-ui"], // only font names here
+      fontFamily: {
+        sekuya: ["Sekuya", "system-ui"],
       },
     },
-  }
-  
-export const plugins = [];
+  },
+  plugins: [],
+};

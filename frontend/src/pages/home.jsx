@@ -7,7 +7,7 @@ import Aurora from '../components/Arora';
 import Particles from '../particles';
 import { FaGithub, FaLinkedin, FaInstagram, FaTwitter } from "react-icons/fa";
 import Typewriter from 'typewriter-effect';
-
+import SplashCursor from '../../SplashCursor';
 const container = {
   hidden: {},
   visible: {
@@ -22,7 +22,9 @@ const item = {
 
 function Home() {
   return (
-    <div className="relative overflow-hidden">
+    
+    <div className="relative overflow-hidden ">
+      < SplashCursor />
       {/* Aurora animated background */}
       <Aurora
         colorStops={["pink", "blue", "purple"]}
@@ -39,7 +41,7 @@ function Home() {
           particleSpread={8}
           speed={0.1}
           particleBaseSize={100}
-          moveParticlesOnHover={true}
+          moveParticlesOnHover={false}
           alphaParticles={false}
           disableRotation={false}
         />
@@ -119,6 +121,21 @@ function Home() {
 
           {/* Social Icons */}
           <motion.div
+          initial={{
+            y:-20,
+            opacity:0,
+            filter:"blur(4px)"
+          }}
+         whileInView={{
+          y:0,
+          opacity:1,
+          filter:"blur(0px)",
+         }}
+         transition={{
+          duration:0.6,
+          ease:"easeOut",
+          delay:0.2
+         }}
             className="flex justify-center md:justify-start gap-6 text-3xl pt-4"
             variants={item}
           >

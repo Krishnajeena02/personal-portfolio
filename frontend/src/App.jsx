@@ -16,12 +16,12 @@ function App() {
       {/* PixelTrail background */}
       <div className="fixed inset-0 z-[-1]">
         
-<SplashCursor />
+< SplashCursor />
       </div>
 
       <Router>
         <Navbar />
-        <div className="pt-20 px-4 md:px-8">
+        <div className="pt-20  px-4 md:px-8">
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/portfolio" element={<Portfolio />} />
