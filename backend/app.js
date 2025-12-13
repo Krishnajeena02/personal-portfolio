@@ -9,7 +9,7 @@ const app = express();
 
 // Middleware
 app.use(cors({
-    origin: "*", // Allow Vite frontend
+    origin: "http://localhost:5173", // Allow Vite frontend
     methods: ["GET", "POST", "PUT", "DELETE"],
     credentials: true
 }));
